@@ -6,7 +6,7 @@ client = discord.Client()
 
 @client.event
 async def on_ready():
-    print("We have succesfuly logged in as {0.user}".format(client))
+    print("We have successfully logged in as {0.user}".format(client))
 
 @client.event
 async def on_message(message):
@@ -29,7 +29,5 @@ async def on_message(message):
     if user_message.lower() == '!anywhere':
         await message.channel.send('This can be used in anywhere!')
         return
-
-
 
 client.run(TOKEN)
